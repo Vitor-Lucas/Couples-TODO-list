@@ -5,18 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#D8B4E2"
-    tools:context=".MainActivity"
-
-
-
-    >
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poestenone"
-        android:text="TextView"
+        android:text="Tasks"
         android:textColor="#210B2C"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,7 +20,51 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.385" />
+        app:layout_constraintVertical_bias="0.069" />
 
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/TaskTextInput"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:background="#AE759F"
+        android:hint="Escreva uma ação"
+        android:textColor="#D8B4E2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.963" />
+
+    <Button
+        android:id="@+id/CreateTaskButton"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:text="+"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.981" />
+
+    <TableLayout
+        android:id="@+id/tabela"
+        android:layout_width="336dp"
+        android:layout_height="534dp"
+        android:background="#9C81A3"
+        android:stretchColumns="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498">
+
+        <TableRow>
+
+        </TableRow>
+    </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
