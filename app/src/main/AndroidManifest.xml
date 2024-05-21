@@ -23,6 +23,7 @@
         </activity>
 
         <activity android:name=".CriarTask"></activity>
+        <activity android:name=".DadosTask"></activity>
     </application>
 
 </manifest>

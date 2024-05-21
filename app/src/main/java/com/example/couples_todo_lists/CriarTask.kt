@@ -25,7 +25,7 @@ class CriarTask: AppCompatActivity() {
         nomeTarefaTextInput = findViewById(R.id.NomeTarefa)
         descTarefaTextInput = findViewById(R.id.DescriçãoTarefa)
 
-        cancelarButton = findViewById(R.id.Cancelar)
+        cancelarButton = findViewById(R.id.Cancelar2)
         cancelarButton.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)

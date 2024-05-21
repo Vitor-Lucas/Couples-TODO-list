@@ -15,7 +15,7 @@
         android:layout_width="331dp"
         android:layout_height="110dp"
         android:fontFamily="@font/poestenone"
-        android:text="Criar uma tarefa"
+        android:text="Informações"
         android:textAlignment="center"
         android:textColor="#210B2C"
         android:textSize="40sp"
@@ -24,20 +24,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.089" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/NomeTarefa"
-        android:layout_width="247dp"
-        android:layout_height="45dp"
-        android:background="#AE759F"
-        android:fontFamily="@font/poestenone"
-        android:hint="Ir ao cinema"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.385" />
 
     <Button
         android:id="@+id/Cancelar2"
@@ -51,32 +37,38 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.964" />
 
-    <Button
-        android:id="@+id/CriarTask2"
-        android:layout_width="138dp"
-        android:layout_height="80dp"
-        android:text="Criar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.828" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/DescriçãoTarefa"
-        android:layout_width="302dp"
-        android:layout_height="126dp"
-        android:background="#AE759F"
+    <TextView
+        android:id="@+id/Nome"
+        android:layout_width="216dp"
+        android:layout_height="54dp"
+        android:background="#9C81A3"
         android:fontFamily="@font/poestenone"
-        android:hint="Descrição"
+        android:text="Nome: "
         android:textAlignment="center"
+        android:textColor="#210B2C"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.546" />
+        app:layout_constraintVertical_bias="0.342" />
+
+    <TextView
+        android:id="@+id/Desc"
+        android:layout_width="220dp"
+        android:layout_height="135dp"
+        android:background="#9C81A3"
+        android:fontFamily="@font/poestenone"
+        android:text="Descrição: "
+        android:textAlignment="center"
+        android:textColor="#210B2C"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.511" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
